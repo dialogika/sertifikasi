@@ -27,7 +27,7 @@ const handleNewTask = async (event) => {
   let whatsapp = iti.getNumber();
   const name = document.getElementById("names").value.trim();
   const note = document.getElementById("messages").value.trim();
-  const program = document.getElementById("programs").value;
+  const profession = document.getElementById("professions").value;
   const address = document.getElementById("locations").value;
   const description =
     "Mendaftar dari halaman iklan online. https://www.dialogika.co/page/kelas-public-speaking-online/";
@@ -39,8 +39,8 @@ const handleNewTask = async (event) => {
   const loading = document.querySelector(".loading");
   const success = document.querySelector(".success");
 
-  if (!program) {
-    alert("Program harus dipilih.");
+  if (!profession) {
+    alert("profession harus dipilih.");
     return;
   } // Membuat task baru di ClickUp
   const custom_fields = [
@@ -49,13 +49,13 @@ const handleNewTask = async (event) => {
       value: note,
     },
     {
-      id: "1ea48bee-9f93-421e-a9e9-b140b8144891",
-      value: [program],
+      id: "6275e7f3-691d-4de5-b979-fc13bdadb349",
+      value: [profession],
     },
-    {
-      id: "cebb3fac-770a-4d4d-9056-1cab027bf9e1",
-      value: address,
-    },
+    // {
+    //   id: "cebb3fac-770a-4d4d-9056-1cab027bf9e1",
+    //   value: address,
+    // },
     {
       id: "0928d307-37dc-47e3-9ed4-ddc1bf73e4e7", // Channelnya dari website
       value: ["03a4d146-a239-4156-b368-ba620c3a0dd4"], // Value channel = website
