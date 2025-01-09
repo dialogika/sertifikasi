@@ -1,0 +1,5 @@
+.atropos-inner img {
+  transform: translateZ(0); 
+  backface-visibility: hidden; 
+  image-rendering: crisp-edges;
+}

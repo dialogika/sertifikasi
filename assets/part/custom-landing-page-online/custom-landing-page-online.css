@@ -1,0 +1,372 @@
+/* Top button english */
+#topbar .contact-info button {
+  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+  background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
+  border: none;
+}
+
+#topbar .contact-info button:hover {
+  background: linear-gradient(to bottom, #0b2b6a 5%, #0f61a8 100%);
+}
+
+/* END Top button english */
+#main #hero {
+  background: none !important;
+  height: 100vh;
+}
+
+.hero-container {
+  width: 100%;
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+.hero-content {
+  height: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero .hero-container .hero-content h1 {
+  color: #1354a3;
+  line-height: 3.5rem;
+  font-size: 48px;
+  text-transform: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 0px;
+  text-shadow: none;
+}
+
+.hero-paragraph {
+  color: #777777;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+#hero .hero-container .hero-content .btn-get-started {
+  color: black;
+  font-weight: 700;
+  width: fit-content;
+  background: linear-gradient(
+    0deg,
+    rgba(241, 172, 21, 1) 22%,
+    rgba(252, 242, 33, 1) 100%
+  );
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 16px -6px rgba(241, 172, 21, 1);
+  -webkit-box-shadow: 0px 5px 16px -6px rgba(241, 172, 21, 1);
+  -moz-box-shadow: 0px 5px 16px -6px rgba(241, 172, 21, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+#main #hero .hero-container .hero-content .btn-get-started:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(241, 172, 21, 1) 22%,
+    rgba(252, 242, 33, 1) 100%
+  );
+  box-shadow: 0px 0px 4px 2px rgba(241, 172, 21, 1);
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(241, 172, 21, 1);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(241, 172, 21, 1);
+}
+
+#hero .hero-container .hero-content .btn-watch-video {
+  color: white;
+  font-weight: 700;
+  width: fit-content;
+  background: linear-gradient(0deg, #07276b 22%, #1354a3 100%);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+  -webkit-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+  -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+  transition: all 0.3s ease-in-out;
+}
+#hero .hero-container .hero-content .btn-watch-video:hover {
+  color: white;
+  font-weight: 700;
+  width: fit-content;
+  background: linear-gradient(0deg, #1354a3 22%, #07276b 100%);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-image-container {
+  margin: 7rem 0 0 0;
+}
+
+/* Style for form */
+
+.contact-append .form-img {
+  background: gray;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* End of style for Form */
+
+/* Tablet (min-width: 768px) and (max-width: 1020px) */
+@media (min-width: 768px) and (max-width: 1020px) {
+  #main #hero {
+    height: 60vh;
+    padding: 0 0;
+  }
+  #hero.d-flex.align-items-center.position-relative {
+    height: 50vh;
+  }
+
+  #hero .hero-container .hero-content {
+    padding-bottom: 0;
+    flex-direction: row-reverse;
+  }
+  #hero .hero-container .hero-content h1 {
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    text-transform: none;
+    -webkit-text-stroke: #1354a3 0px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero-paragraph {
+    font-size: 16px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  #main #hero {
+    height: 100vh;
+  }
+  section#hero {
+    padding-bottom: 0;
+  }
+  #hero .container.hero-container {
+    padding-bottom: 0;
+  }
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero .hero-container .hero-content {
+    padding-bottom: 0;
+  }
+
+  #hero .hero-container .hero-content h1 {
+    line-height: 2rem;
+    font-size: 1.75rem;
+    text-transform: none;
+    -webkit-text-stroke: #1354a3 1px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero-paragraph {
+    font-size: 14px;
+  }
+
+  .hero-image-container {
+    margin: 0;
+  }
+
+
+  #hero .btn-get-started {
+    width: 100%;
+    align-self: center;
+    margin-top: 10px;
+  }
+}
+
+/* !============= SOSMED BTN Start =================! */
+/* SOSMED START */
+.sosmed-container {
+  position: relative;
+  background-color: red;
+}
+
+.sosmed-container .btn-sosmed {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  transition: all 0.1s ease-in-out;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  box-shadow: inset 0px 1px 0px 0px #006a4e;
+  background: linear-gradient(to bottom, #009961 5%, #006a4e 100%);
+  background-color: #009961;
+}
+
+.sosmed-container .btn-wa i,
+.sosmed-container .btn-trigger-sosmed i {
+  font-size: x-large;
+}
+
+.sosmed-container .btn-sosmed i::before {
+  color: rgb(255, 255, 255);
+}
+
+.btn-trigger-sosmed {
+  z-index: 99999999999999999 !important;
+}
+
+.btn-wa-active {
+  bottom: 6rem !important;
+}
+
+.btn-x-active {
+  bottom: 10rem !important;
+}
+
+.btn-sosmed.btn-x {
+  background: linear-gradient(to bottom, #28282b 5%, #000 100%);
+}
+
+.btn-linkedin-active {
+  bottom: 14rem !important;
+}
+
+.btn-sosmed.btn-linkedin {
+  background: linear-gradient(to bottom, #0e76a8 5%, #1b4f8f 100%);
+}
+
+.btn-ig-active {
+  bottom: 18rem !important;
+}
+.btn-sosmed.btn-ig {
+  background: linear-gradient(to bottom, #8134af 20%, #dd2a7b 100%);
+}
+
+.btn-tiktok-active {
+  bottom: 22rem !important;
+}
+.btn-sosmed.btn-tiktok {
+  background: linear-gradient(to bottom, #010101 5%, #28282b 100%);
+}
+/* SOSMED END */
+
+/* !================= UX untuk form =================! */
+
+/* Animasi loading */
+
+#contact #uploadForm .loading::before {
+  content: none;
+}
+
+#contact #uploadForm .loading {
+  background: white;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 30px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease;
+}
+
+#contact #uploadForm .loading-spinner {
+  border: 10px solid #f3f3f3; /* Warna dasar */
+  border-top: 10px solid #007bff; /* Warna bagian yang berputar */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animasi sukses */
+
+#contact #uploadForm .success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 30px;
+  margin: 0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+  background-color: #28a745;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+
+#contact #uploadForm .success svg {
+  margin-bottom: 10px;
+  fill: white;
+  height: 100px;
+  width: 100px;
+}
+
+#contact #uploadForm .success p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.success svg {
+  margin-bottom: 10px;
+  fill: white;
+  height: 100px;
+  width: 100px;
+}
+
+.success p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9); /* Mulai dengan ukuran sedikit lebih kecil */
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1); /* Kembali ke ukuran normal */
+  }
+}
