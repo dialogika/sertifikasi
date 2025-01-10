@@ -35,16 +35,15 @@ class Header extends HTMLElement {
         <ul class="navbar-desktop-list">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimony</a></li>
+          <li><a class="nav-link scrollto" href="#unit">Unit</a></li>
           <li><a class="nav-link scrollto" href="#about">Benefit</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#mentor">Mentor</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
         </ul>
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
        
 
-      <a href="#exampleModal" class="appointment-btn" data-bs-toggle="modal">Material <span class="d-none d-md-inline">Class</span></a>
+      <a href="#exampleModal" class="appointment-btn" data-bs-toggle="modal">Material <span class="d-none d-md-inline">Program</span></a>
 
     </div>
   </header><!-- End Header -->
@@ -63,7 +62,7 @@ class Header extends HTMLElement {
           <a href="#hero"><div class="card"><div class="card-body">Home</div></div></a>
           <a href="#testimonials"><div class="card card-body">Testimony</div></a>
           <a href="#pricing"><div class="card card-body">Pricing</div></a>
-          <a href="#mentor"><div class="card card-body">Mentor</div></a>
+          <a href="#unit"><div class="card card-body">Unit</div></a>
           <a href="#gallery"><div class="card card-body">Gallery</div></a>
         </div>
       </div>
