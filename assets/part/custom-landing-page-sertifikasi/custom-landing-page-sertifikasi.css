@@ -1,4 +1,524 @@
-/* Unit table style */
+:root {
+  --bg-one: #973999;
+  --bg-two: #f8598b;
+  --bg-three: #f7bf00;
+  --bg-panel: #fff;
+  --color-headings: #fff;
+  --color-text: #333;
+  --color-fun: #c44394;
+  --base-border-color: hsl(0 0% 23%);
+  --active-color: hsl(183 66% 67%);
+}
+
+/* Flow Pendaftaran Sertifikasi style */
+@property --colorStop {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+/* Flow Container */
+.flow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+/* Capsule Wrapper */
+.capsule-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+/* Capsule Styling */
+.capsule {
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+  text-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  background-color: #007bff;
+  color: white;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Line Styling */
+.line {
+  width: 2rem;
+  height: 2px;
+  background-color: #007bff;
+  flex-shrink: 0;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .flow-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flow-container {
+    flex-wrap: wrap;
+  }
+
+  .capsule-wrapper:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1rem;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+  }
+}
+
+/* Lokasi Sertifikasi style */
+
+/* ==========================================================================
+   Block: Pelatihan BNSP Countdown
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.fa-stack {
+  font-size: 50px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#countdown-pelatihan {
+  box-shadow: 0px 13px 20px 4px rgb(90 90 90 / 75%);
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--bg-panel);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 40px 40px 30px;
+}
+
+.countdown-item {
+  color: var(--color-text);
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 30px;
+  margin: 10px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.countdown-item span {
+  color: var(--color-text);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.countdown-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* ==========================================================================
+   Block: Section Subtitle
+   Dependencies: no dependencies
+   ========================================================================== */
+
+.screens-preview img {
+  border-style: none;
+}
+.section-subtitle-detail {
+  text-transform: uppercase;
+  color: #abafb8;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+}
+
+.section-subtitle-detail--center {
+  max-width: 425px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.section-subtitle-detail--hero {
+  font-family: "Poppins";
+  font-size: 16px;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+}
+
+/* ==========================================================================
+   Block: Section Title
+   Dependencies: no dependencies
+   ========================================================================== */
+.section-title-detail {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Allows positioning for the highlight */
+  line-height: 1.2; /* Adjust line height for spacing */
+  color: black;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+
+.section-title-detail--center {
+  text-align: center;
+}
+
+.section-title-detail--light {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Block: Accordion
+   Dependencies: no dependencies
+   ========================================================================== */
+.accordion__item {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.accordion__title {
+  box-shadow: 0px 13px 20px 4px rgb(90 90 90 / 75%);
+  height: 100px;
+  background: #ffffff;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  gap: 1rem;
+  font-size: 16px;
+  margin: 0;
+  padding: 25px 20px 25px 20px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  line-height: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion__title svg {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  fill: #f6b12b;
+}
+
+.accordion__icon-wrapper {
+  width: 5%;
+  /* display: flex; */
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.accordion__icon-wrapper svg {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  fill: #f6b12b;
+}
+
+.accordion__icon {
+  width: 24px;
+  height: 24px;
+  color: #abafb8;
+  transition: transform 0.25s ease;
+}
+
+.accordion__title--active .accordion__icon {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  box-shadow: 0px 13px 20px 4px rgb(90 90 90 / 75%);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  background-color: #ffffff;
+  display: none;
+  padding: 40px 20px 30px 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.accordion__content p:last-child {
+  margin: 0;
+}
+
+.fontello-angle-right:before,
+.accordion__title:after,
+.menu__child .menu__link.sf-with-ul:after {
+  content: none; /* Menghapus ikon */
+}
+@media all and (max-width: 480px) {
+  .accordion__title {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .screens-preview {
+    float: none;
+    margin: 0 auto 60px auto;
+    position: relative;
+    left: auto;
+    /* right: -100px; */
+  }
+
+  .screens-preview__secondary {
+    left: -200px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .screens-preview--right {
+    left: -100px;
+  }
+
+  .screens-preview--right .screens-preview__secondary {
+    right: -200px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #details .left-duocard {
+    height: 400px;
+  }
+
+  #details .right-duocard {
+    height: 400px;
+  }
+  .screens-preview {
+    right: -50px;
+    scale: 0.5;
+  }
+
+  .screens-preview.screens-preview--right {
+    left: -50px;
+    right: auto;
+    scale: 0.5;
+  }
+}
+
+/* ==========================================================================
+   Block: Screens Preview
+   Dependencies: no dependencies
+   ========================================================================== */
+.screens-preview {
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px dotted rgba(183, 184, 184, 0.5);
+  max-width: 350px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 20%;
+  margin-right: 0;
+}
+
+.screens-preview--right {
+  margin-left: 0;
+  margin-right: 20%;
+  float: right;
+}
+
+.screens-preview__primary {
+  border-radius: 14px;
+  z-index: 10;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(86, 86, 86, 0.6);
+  box-shadow: 0px 5px 20px 0px rgba(86, 86, 86, 0.6);
+}
+
+.screens-preview__secondary {
+  border-radius: 14px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 70%;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(86, 86, 86, 0.6);
+  box-shadow: 0px 5px 20px 0px rgba(86, 86, 86, 0.6);
+  right: 0;
+  left: -30%;
+}
+
+.screens-preview--right .screens-preview__secondary {
+  right: -30%;
+  left: auto;
+}
+
+/* ==========================================================================
+Box
+ ========================================================================== */
+
+.box {
+  border-radius: 14px;
+  background: #ffffff;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0px 13px 20px 4px rgb(90 90 90 / 75%);
+  display: flex;
+  text-align: center;
+  line-height: 75px;
+  margin-right: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.box svg {
+  width: 40px;
+  height: 40px;
+  fill: #f6b12b;
+  transition: fill 0.3s ease;
+}
+
+.push--0 {
+  margin-bottom: 0px;
+}
+
+.push--10 {
+  margin-bottom: 10px;
+}
+
+.push--15 {
+  margin-bottom: 15px;
+}
+
+.push--20 {
+  margin-bottom: 20px;
+}
+
+.push--30 {
+  margin-bottom: 30px;
+}
+
+.push--40 {
+  margin-bottom: 40px;
+}
+
+.push--60 {
+  margin-bottom: 60px;
+}
+
+.push--80 {
+  margin-bottom: 80px;
+}
+
+.push--100 {
+  margin-bottom: 100px;
+}
+
+.push--150 {
+  margin-bottom: 150px;
+}
+
+.list--check {
+  gap: 1rem;
+}
+
+.list {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Boxed List Items */
+.list--boxes .list__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* General List Item Styling */
+.list__item {
+  gap: 1rem;
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  line-height: 25px;
+  font-size: 16px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__itema svg {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  fill: #f6b12b;
+}
+
+li.list__itema {
+  border-radius: 14px;
+  padding: 25px;
+  gap: 1rem;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 13px 20px 4px rgb(90 90 90 / 75%);
+}
+
+li.list__itema p {
+  margin: 0;
+}
+
+/* Logo Link Styling */
+.logo__link {
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  transition: color 0.25s ease;
+}
+
+/* Logo Image Styling */
+.logo__image {
+  display: block;
+  height: 40px;
+}
+
+/* Unit kompetensi table style */
 #unit-table th,
 #unit-table td {
   text-align: left;
