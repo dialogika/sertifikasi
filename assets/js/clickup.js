@@ -25,8 +25,7 @@ const handleNewTask = async (event) => {
   const note = document.getElementById("messages").value.trim();
   const profession = document.getElementById("professions").value.trim();
   const locations = document.getElementById("locations").value.trim();
-  const description =
-    "Mendaftar dari halaman iklan online. https://www.dialogika.co/page/kelas-public-speaking-online/";
+  const description = "Mendaftar dari Untuk Sertifikasi BNSP. https://www.dialogika.co/sertifikasi/";
 
   // API Token dan List ID ClickUp
   const listId = "14355106";
@@ -38,11 +37,11 @@ const handleNewTask = async (event) => {
   if (!profession) {
     alert("Profesi harus dipilih.");
     return;
-  } 
+  }
   if (!locations) {
     alert("Lokasi harus dipilih.");
     return;
-  } 
+  }
   // Membuat task baru di ClickUp
   const custom_fields = [
     {
