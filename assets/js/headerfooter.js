@@ -35,10 +35,10 @@ class Header extends HTMLElement {
         <ul class="navbar-desktop-list">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimony</a></li>
-          <li><a class="nav-link scrollto" href="#unit">Unit</a></li>
-          <li><a class="nav-link scrollto" href="#about">Benefit</a></li>
+          <li><a class="nav-link scrollto" href="#kompetensi">Kompetensi</a></li>
+          <li><a class="nav-link scrollto" href="#benefit">Benefit</a></li>
           <li><a class="nav-link scrollto" href="#details">Jadwal</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#investasi">Investasi</a></li>
         </ul>
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
@@ -62,9 +62,10 @@ class Header extends HTMLElement {
         <div class="offcanvas-body">
           <a href="#hero"><div class="card"><div class="card-body">Home</div></div></a>
           <a href="#testimonials"><div class="card card-body">Testimony</div></a>
-          <a href="#pricing"><div class="card card-body">Pricing</div></a>
-          <a href="#unit"><div class="card card-body">Unit</div></a>
-          <a href="#gallery"><div class="card card-body">Gallery</div></a>
+          <a href="#kompetensi"><div class="card card-body">Kompetensi</div></a>
+          <a href="#benefit"><div class="card card-body">Benefit</div></a>
+          <a href="#details"><div class="card card-body">Jadwal</div></a>
+          <a href="#investasi"><div class="card card-body">Investasi</div></a>
         </div>
       </div>
     </div>
