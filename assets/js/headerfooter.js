@@ -37,13 +37,14 @@ class Header extends HTMLElement {
           <li><a class="nav-link scrollto" href="#testimonials">Testimony</a></li>
           <li><a class="nav-link scrollto" href="#unit">Unit</a></li>
           <li><a class="nav-link scrollto" href="#about">Benefit</a></li>
+          <li><a class="nav-link scrollto" href="#details">Jadwal</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
         </ul>
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
        
 
-      <a href="#exampleModal" class="appointment-btn" data-bs-toggle="modal">Material <span class="d-none d-md-inline">Program</span></a>
+      <a href="#contact" class="appointment-btn">Daftar <span class="d-none d-md-inline">Sekarang</span></a>
 
     </div>
   </header><!-- End Header -->

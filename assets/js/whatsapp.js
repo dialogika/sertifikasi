@@ -42,7 +42,7 @@ $(document).on("click", ".send_contact", function () {
       input_domisili2 +
       "%0A" +
       "*Program*      : " +
-      input_program2 +
+      "Sertifikasi Public Speaking BNSP" +
       "%0A" +
       "*Pesan*        : " +
       input_message2 +

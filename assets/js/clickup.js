@@ -50,7 +50,7 @@ const handleNewTask = async (event) => {
     },
     {
       id: "6275e7f3-691d-4de5-b979-fc13bdadb349",
-      value: [profession],
+      value: [profession],  // PERLU DIGANTI
     },
     // {
     //   id: "cebb3fac-770a-4d4d-9056-1cab027bf9e1",
@@ -80,6 +80,8 @@ const handleNewTask = async (event) => {
   } catch (error) {
     console.error("Kesalahan:", error);
     alert("Terjadi kesalahan. Silakan coba lagi.");
+    loading.style.display = "none";
+    success.style.display = "none";
   }
 };
 
