@@ -50,19 +50,15 @@ const handleNewTask = async (event) => {
     },
     {
       id: "3afd7eb2-ed78-45c0-bee4-4ae0c9be4376",
-      value: profession, // PERLU DIGANTI
+      value: profession,
     },
-    // {
-    //   id: "cebb3fac-770a-4d4d-9056-1cab027bf9e1",
-    //   value: address,
-    // },
     {
-      id: "0928d307-37dc-47e3-9ed4-ddc1bf73e4e7", // Channelnya dari website
+      id: "0928d307-37dc-47e3-9ed4-ddc1bf73e4e7", // ID Channel
       value: ["03a4d146-a239-4156-b368-ba620c3a0dd4"], // Value channel = website
     },
     {
       id: "cebb3fac-770a-4d4d-9056-1cab027bf9e1", // ID Address
-      value: locations, // Value channel = website
+      value: locations,
     },
     {
       id: "1ea48bee-9f93-421e-a9e9-b140b8144891", // ID Program
