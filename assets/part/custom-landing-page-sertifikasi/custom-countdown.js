@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     function updateCountdown() {
-        const targetDate = new Date("January 31, 2025 05:00:00").getTime();
+        const targetDate = new Date("february 28, 2025 05:00:00").getTime();
       const currentDate = new Date().getTime();
       const distance = targetDate - currentDate;
   
