@@ -187,3 +187,22 @@ if (subFooterBtn) {
 
 const uploadForm = document.getElementById("uploadForm");
 if (uploadForm) uploadForm.addEventListener("submit", handleNewTask);
+
+
+function toggleColumn() {
+  let table = document.getElementById("unit-table");
+  table.classList.toggle("hidden-column");
+}
+
+let isRunning = false;
+const showButton = document.getElementById("show-button");
+showButton.addEventListener("click", function () {
+  isRunning = !isRunning;
+
+  if (isRunning) {
+    showButton.textContent = "Hide Column";
+  } else {
+    showButton.textContent = "Tampilkan Kode Unit";
+  }
+
+});
