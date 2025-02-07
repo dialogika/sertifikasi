@@ -187,3 +187,5 @@ if (subFooterBtn) {
 
 const uploadForm = document.getElementById("uploadForm");
 if (uploadForm) uploadForm.addEventListener("submit", handleNewTask);
+
+
