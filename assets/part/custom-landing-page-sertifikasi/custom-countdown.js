@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function updateCountdown() {
-    const targetDate = new Date("May 30, 2025 05:00:00").getTime();
+    const targetDate = new Date("Sep 28, 2025 05:00:00").getTime();
     const currentDate = new Date().getTime();
     const distance = targetDate - currentDate;
 
@@ -27,8 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     countdownValues.hari = Math.floor(distance / (1000 * 60 * 60 * 24));
-    countdownValues.jam = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    countdownValues.menit = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    countdownValues.jam = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    countdownValues.menit = Math.floor(
+      (distance % (1000 * 60 * 60)) / (1000 * 60)
+    );
     countdownValues.detik = Math.floor((distance % (1000 * 60)) / 1000);
 
     updateUI();
@@ -65,7 +69,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const end = polarToCartesian(x, y, radius, startAngle);
     const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
 
-    return ["M", start.x, start.y, "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y].join(" ");
+    return [
+      "M",
+      start.x,
+      start.y,
+      "A",
+      radius,
+      radius,
+      0,
+      largeArcFlag,
+      0,
+      end.x,
+      end.y,
+    ].join(" ");
   }
 
   // Start countdown
