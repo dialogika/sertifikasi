@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function updateCountdown() {
-    const targetDate = new Date("Sep 28, 2025 05:00:00").getTime();
+    const targetDate = new Date("Dec 28, 2025 05:00:00").getTime();
     const currentDate = new Date().getTime();
     const distance = targetDate - currentDate;
 
@@ -43,7 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const countdownItem = document.getElementById(key);
       const timeValue = countdownItem.querySelector(".time-value");
       const path = countdownItem.querySelector("path");
-      const maxValue = key === "hari" ? 30 : key === "jam" ? 24 : 60;
+      let maxValue;
+      if (key === "hari") {
+        // Gunakan nilai maksimum antara 365 hari atau nilai aktual + buffer
+        maxValue = Math.max(365, countdownValues[key] + 50);
+      } else if (key === "jam") {
+        maxValue = 24;
+      } else {
+        maxValue = 60;
+      }
       const radius = mapNumber(countdownValues[key], maxValue, 0, 0, 360);
 
       timeValue.textContent = countdownValues[key];
